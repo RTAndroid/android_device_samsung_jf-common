@@ -27,6 +27,8 @@
 #
 #
 
+import init.rtandroid.rc
+
 on early-init
     mkdir /firmware 0771 system system
     mkdir /firmware-mdm 0771 system system
