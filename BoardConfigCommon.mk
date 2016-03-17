@@ -38,7 +38,10 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 acpi_irq_nobalance noirqbalanc
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 BOARD_KERNEL_PAGESIZE := 2048
+TARGET_KERNEL_CONFIG := rtandroid_jf_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/jf
+TARGET_KERNEL_GCC_VER := 4.8
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-$(TARGET_KERNEL_GCC_VER)/bin
 
 # Audio
 BOARD_HAVE_AUDIENCE_ES325_2MIC := true
