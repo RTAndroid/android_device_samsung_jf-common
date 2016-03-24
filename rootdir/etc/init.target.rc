@@ -322,6 +322,13 @@ service time_daemon /system/bin/time_daemon
     user root
     group root
 
+# Wifi service for jfvelte
+service wcnss-service /system/bin/wcnss_service
+    class late_start
+    user system
+    group system wifi
+    oneshot
+
 # insthk
 service insthk /system/bin/insthk
     class main
