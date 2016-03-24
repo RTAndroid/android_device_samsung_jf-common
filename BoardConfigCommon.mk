@@ -160,6 +160,7 @@ BOARD_SEPOLICY_UNION += \
     ueventd.te \
     vibe_dev.te \
     vold.te \
+    wcnss.te \
     wpa.te
 
 # Vold
